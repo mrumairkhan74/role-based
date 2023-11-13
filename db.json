@@ -1,0 +1,114 @@
+{
+  "user": [
+    {
+      "id": "admin",
+      "name": "Admin",
+      "password": "Admin.123",
+      "email": "Admin@in.com",
+      "gender": "male",
+      "role": "admin",
+      "isactive": true
+    },
+    {
+      "id": "umairkhan74",
+      "name": "Umair Khan",
+      "password": "Khanumair123",
+      "email": "mrumairkhan74@gmail.com",
+      "gender": "male",
+      "role": "staff",
+      "isactive": true
+    },
+    {
+      "id": "mrumairkhan74",
+      "name": "Umair Khan",
+      "password": "Khanumair.813",
+      "email": "mrumairkhan74@gmail.com",
+      "gender": "male",
+      "role": "staff",
+      "isactive": true
+    },
+    {
+      "id": "umairkhan",
+      "name": "mair khan",
+      "password": "Khanumair.813",
+      "email": "mair@in.com",
+      "gender": "male",
+      "role": "quailty",
+      "isactive": true
+    },
+    {
+      "id": "sania",
+      "name": "sania",
+      "password": "Sania.123",
+      "email": "saina@gmail.com",
+      "gender": "female",
+      "role": "staff",
+      "isactive": true
+    },
+    {
+      "id": "sapna",
+      "name": "Sapna Qadeer",
+      "password": "Sapna.786",
+      "email": "sapna@gmail.com",
+      "gender": "female",
+      "role": "staff",
+      "isactive": true
+    },
+    {
+      "id": "khan123",
+      "name": "Khan umair",
+      "password": "Khanumair.123",
+      "email": "khanumair@in.com",
+      "gender": "male",
+      "role": "quailty",
+      "isactive": true
+    },
+    {
+      "id": "mrumairkhan87",
+      "name": "umair",
+      "password": "Khanumair.813",
+      "email": "mr@in.com",
+      "gender": "male",
+      "role": "quailty",
+      "isactive": true
+    }
+  ],
+  "role": [
+    {
+      "code": "staff",
+      "name": "Staff"
+    },
+    {
+      "code": "quailty",
+      "name": "Quailty"
+    }
+  ],
+  "donation": [
+    {
+      "id": "umair Khan",
+      "name": "Khan umair",
+      "email": "mumairkhan74@gmail.com",
+      "cardno": "1234567890123456",
+      "cvv": "123",
+      "amount": "1200"
+    },
+    {
+      "id": "zubair khan",
+      "name": "zubair",
+      "email": "zubair123@in.com",
+      "cardno": "1234567890123456",
+      "cvv": "344",
+      "amount": "200"
+    }
+  ],
+  "donationrole": [
+    {
+      "code": "Accept",
+      "name": "Accept"
+    },
+    {
+      "code": "Decline",
+      "name": "Decline"
+    }
+  ]
+}

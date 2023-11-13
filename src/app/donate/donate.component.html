@@ -1,0 +1,48 @@
+<mat-card>
+    <mat-card-header>
+       Donation 
+    </mat-card-header>
+    <mat-card-content>
+        <form class="example-form" [formGroup]="donationform" (ngSubmit)="proceeddonation()">
+            <mat-form-field class="example-full-width">
+                <mat-label>User Name</mat-label>
+                <input matInput formControlName="id">
+            </mat-form-field>
+
+            <!-- User name -->
+            <mat-form-field class="example-full-width">
+                <mat-label>Name</mat-label>
+                <input matInput formControlName="name">
+            </mat-form-field>
+
+            <!-- User email -->
+            <mat-form-field class="example-full-width">
+                <mat-label>Email</mat-label>
+                <input matInput formControlName="email">
+            </mat-form-field>
+
+            <!-- CArd no -->
+            <mat-form-field class="example-full-width">
+                <mat-label>Card no</mat-label>
+                <input matInput formControlName="cardno">
+            </mat-form-field>
+
+            <!-- cvv -->
+            <mat-form-field class="example-full-width">
+                <mat-label>CVV</mat-label>
+                <input matInput formControlName="cvv">
+            </mat-form-field>
+
+            <!-- amount -->
+            <mat-form-field class="example-full-width">
+                <mat-label>Amount</mat-label>
+                <input matInput formControlName="amount">
+            </mat-form-field>
+
+
+            <!-- button -->
+            <button mat-raised-button color="primary">Donate</button>
+        </form>
+
+    </mat-card-content>
+</mat-card>

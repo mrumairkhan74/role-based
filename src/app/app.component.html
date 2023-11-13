@@ -1,0 +1,41 @@
+<nav class="navbar" style="background-color: #2c3449;" data-bs-theme="dark" >
+  <div class="container-fluid">
+    <a class="navbar-brand">Role-Based</a>
+    <ul class="nav nav-pills" *ngIf="ismenurequired">
+      <li class="nav-item " >
+        <a class="nav-link" routerLinkActive="active" 
+        [routerLinkActiveOptions]="{exact: true}"  routerLink="">Home</a>
+      </li>
+      <li class="nav-item">
+        <a *ngIf="isadminuser" class="nav-link" routerLinkActive="active" 
+        [routerLinkActiveOptions]="{exact: true}"
+        routerLink="admin/user">User</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLinkActive="active" 
+        [routerLinkActiveOptions]="{exact: true}"
+        routerLink="/donationli">Donation List</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link"  *ngIf="isuser" routerLinkActive="active" 
+        [routerLinkActiveOptions]="{exact: true}"
+        routerLink="/donate">Donate</a>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-link"  routerLinkActive="active" 
+        [routerLinkActiveOptions]="{exact: true}"
+        routerLink="/login">Logout</a>
+      </li>
+      
+    </ul>
+    <form class="d-flex" role="search" *ngIf="isbuttonrequired" >
+      <button mat-raised-button color="accent" routerLink="/register">Register</button>
+      <button mat-raised-button color="accent" routerLink="/login">Login</button>
+    </form>
+  </div>
+</nav>
+<div class="content" style="width: 100%; display: block;" role="main">
+  <router-outlet></router-outlet>
+</div>

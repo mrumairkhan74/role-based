@@ -1,0 +1,19 @@
+li a{
+    color: aliceblue;
+    font-size: 1rem;
+    margin: auto 10px;
+    
+}
+a{
+    margin: auto 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+li a:hover,
+li a.active{
+    background: rgb(255, 40, 133);
+    border-radius: 5px;
+}
+button{
+    margin: 5px;
+}

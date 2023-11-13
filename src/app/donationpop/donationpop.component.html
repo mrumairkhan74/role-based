@@ -1,0 +1,23 @@
+<mat-card>
+    <mat-card-header>
+        Update Donation
+    </mat-card-header>
+    <mat-card-content>
+        <form class="example-form" [formGroup]="donationform" (ngSubmit)="updateuser()" >
+                <!-- User email -->
+                <mat-form-field class="example-full-width">
+                    <mat-label>Donation</mat-label>
+                    <mat-select formControlName="role">
+                        <mat-option value="">Donation</mat-option>
+                        <mat-option *ngFor="let item of Donationrolelist" [value]="item.code">
+                            {{item.name}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <!-- button -->
+                <button mat-raised-button color="primary">Update</button>
+                <a mat-dialog-close mat-raised-button color="accent">Close</a>
+        </form>
+
+    </mat-card-content>
+</mat-card>
